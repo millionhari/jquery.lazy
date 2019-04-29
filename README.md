@@ -35,19 +35,19 @@ _This project is friendly supported by [JetBrains](https://jetbrains.com) & [Php
 ---
 
 ## About Lazy
-Lazy is a fast, feature-rich and lightweight delayed content loading plugin for jQuery and Zepto. 
-It's designed to speed up page loading times and decrease traffic to your users by only loading the content in view. 
+Lazy is a fast, feature-rich and lightweight delayed content loading plugin for jQuery and Zepto.
+It's designed to speed up page loading times and decrease traffic to your users by only loading the content in view.
 You can use Lazy in all vertical and horizontal scroll ways.
 It supports images in `<img />` tags and backgrounds, supplied with css like `background-image`, by default.
 On those elements Lazy can set an default image or a placeholder while loading and supports retina displays as well.
-But Lazy is even able to load any other content you want by [plugins](#loader-plugins) and [custom loaders](#custom-content-loaders). 
+But Lazy is even able to load any other content you want by [plugins](#loader-plugins) and [custom loaders](#custom-content-loaders).
 
 
 ## Compatibility
-Lazy will work with a wide range of browsers and support jQuery versions for years backwards and Zepto as alternative. 
+Lazy will work with a wide range of browsers and support jQuery versions for years backwards and Zepto as alternative.
 You can pick any version since jQuery 1.7.2 or Zepto 1.1.6 or greater.
 There is no way to guarantee, that Lazy will work with all browsers, but all I've tested worked great so far.
-If you find any problems in specific browsers, [please let me know](http://github.com/eisbehr-/jquery.lazy/issues). 
+If you find any problems in specific browsers, [please let me know](http://github.com/eisbehr-/jquery.lazy/issues).
 
 **Tested in:** IE, Chrome (+ mobile), Firefox (+ mobile), Safari (+ mobile) and Android Browser.
 
@@ -91,15 +91,15 @@ $ bower install jquery-lazy
 
 
 ## Basic Usage
-1.) The basic usage of Lazy ist pretty easy.
-First of all you need to prepare all elements you want to lazy load. 
+1.) The basic usage of Lazy is pretty easy.
+First of all you need to prepare all elements you want to lazy load.
 By default add a `data-src` attribute to images containing the loadable image and/or a `data-loader` attribute to elements witch shall use a [plugin](#loader-plugins) or [custom loaders](#custom-content-loaders).
 ```HTML
 <img class="lazy" data-src="path/to/image_to_load.jpg" src="" />
 ```
 
 2.) Start using Lazy by calling it after page load.
-You don't have to specify your elements exactly, but for better performance, or different options, load your elements over unique classes or any other selector. 
+You don't have to specify your elements exactly, but for better performance, or different options, load your elements over unique classes or any other selector.
 ```JS
 $(function($) {
     $("img.lazy").Lazy();
@@ -179,9 +179,9 @@ $(".lazy").Lazy({
 
 ## Loader Plugins
 The loader plugins can extend the functionality of Lazy, like loading other elements and data.
-It is basically the same as the [custom content loaders](#custom-content-loaders), with the difference, that plugins can extend all further instances globally at once permanently and let them handle specific elements like `<video>` by default, without `data-loader` attribute set. 
+It is basically the same as the [custom content loaders](#custom-content-loaders), with the difference, that plugins can extend all further instances globally at once permanently and let them handle specific elements like `<video>` by default, without `data-loader` attribute set.
 With custom content loaders you have to initialize each instance on setup with the loader.
-With plugins you only load the plugin file and you're done for all instances from now on. 
+With plugins you only load the plugin file and you're done for all instances from now on.
 
 For more information and examples, take a look at the [existing plugins](https://github.com/eisbehr-/jquery.lazy/tree/master/plugins) or the [readme.md](https://github.com/eisbehr-/jquery.lazy/tree/master/plugins/README.md) in there.
 
@@ -260,5 +260,5 @@ Lazy is dual-licensed under [MIT](http://www.opensource.org/licenses/mit-license
 _You like to support me?_  
 _You appreciate my work?_  
 _You use it in commercial projects?_  
-  
+
 Feel free to make a little [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FFL6VQJCUZMXC)! :wink:
